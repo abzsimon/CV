@@ -1,6 +1,6 @@
 body
 {
-    margin : 5%;
+    margin : 10%;
 }
 
 p
@@ -54,13 +54,14 @@ p
 {
     display: flex;
     flex-direction: column;
+    max-width: 20%; 
+    padding-right: 15em 
 }
 
 #labels .info-icons
 {
     display: flex;
     align-items: center;
-    margin-right: 30em;
 }
 
 #labels .info-icons i,p,a
@@ -75,4 +76,65 @@ p
     margin-top: 0.2em;
     margin-bottom: 0.2em;
     color: darksalmon;
+}
+
+#about
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em
+}
+
+#about h1
+{
+    color: darksalmon;
+    padding : 0.1em;
+    max-width: 50%
+}
+
+#me
+{
+    max-width: 40%;
+}
+
+#me p
+{    
+    text-align: justify;
+}
+
+#progression-bars
+{
+    display: flex;
+}
+
+#notes
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+
+#notes .stars
+{
+    margin-top: 0.2em;
+    margin-bottom: 0.2em; 
+    color: darksalmon  
+}
+
+#skill 
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;  
+    padding-left: 1em;      
+}
+
+#Experience h2
+{
+    color: darksalmon;
+    padding : 0.1em;
+    max-width: 50%;
+    font-size: large;
 }
