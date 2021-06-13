@@ -1,6 +1,7 @@
 body
 {
-    margin : 10%;
+    margin-left : 5%;
+    margin-right: 5%;
 }
 
 p
@@ -94,7 +95,7 @@ p
 
 #me
 {
-    max-width: 40%;
+    max-width: 50%;
 }
 
 #me p
@@ -105,6 +106,8 @@ p
 #progression-bars
 {
     display: flex;
+    margin-right : 5em;
+    margin-top: 2em
 }
 
 #notes
@@ -131,10 +134,56 @@ p
     padding-left: 1em;      
 }
 
+#Experience 
+{
+    padding-top: 1em
+}
 #Experience h2
 {
     color: darksalmon;
     padding : 0.1em;
-    max-width: 50%;
     font-size: large;
+}
+
+table
+{
+    max-width: 80%
+}
+
+table a
+{
+    color:darksalmon;
+}
+
+table h3
+{
+    display: block;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+td p:first-child
+{
+    text-align: center;
+    font-size: 1em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 1em;
+    padding: 0.5em;
+    border-color: darksalmon; 
+}
+
+td p:nth-child(2)
+
+{
+    font-style:italic;
+    margin-left:0.2em;
+}
+
+td:nth-child(2)
+{
+    padding-left: 2em;
+    padding-right: 10em;
 }
