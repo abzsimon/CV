@@ -2,6 +2,7 @@ body
 {
     margin-left : 5%;
     margin-right: 5%;
+    margin-top: 3%
 }
 
 p
@@ -146,10 +147,31 @@ p
     font-size: large;
 }
 
-table
+table 
 {
-    max-width: 80%
+    table-layout: fixed;
+    width: 90%;
 }
+
+thead th
+{
+    text-align: center;
+}
+
+thead th:nth-child(1) 
+{
+    width: 5%;
+}
+  
+thead th:nth-child(2) 
+{
+    width: 80%;
+}
+  
+thead th:nth-child(3) 
+  {
+    width: 15%;
+  }
 
 table a
 {
@@ -186,7 +208,12 @@ td p:nth-child(2)
 td:nth-child(2)
 {
     padding-left: 2em;
-    padding-right: 10em;
+    padding-right: 20em;
+}
+
+td:nth-child(3)
+{
+    text-align: center;
 }
 
 #Formation h2
@@ -196,18 +223,9 @@ td:nth-child(2)
     font-size: large;
 }
 
-#univ-bas
+footer
 {
-    border-bottom: solid;
-    border-color:darksalmon;
-    border-width: 0.1em;
-    border-radius:2em
-}
-
-#univ-haut
-{
-    border-top: solid;
-    border-color:darksalmon;
-    border-width: 0.1em;
-    border-radius:2em;
+    margin-top: 1em;
+    padding-top: 1em;
+    background-image: linear-gradient(white, darksalmon)
 }
