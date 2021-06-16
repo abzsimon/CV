@@ -52,6 +52,27 @@ p
     padding-right: 0.4em;
 }
 
+#portrait
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#portrait img
+{
+    width: 7em;
+    border-radius: 20em;
+    padding: 0.2em;
+    border : solid darksalmon 0.01em
+}
+
+#portrait a
+{
+    color:darksalmon;
+    text-decoration: none;
+    padding : 1em
+}
+
 #labels
 {
     display: flex;
@@ -135,7 +156,7 @@ p
     padding-left: 1em;      
 }
 
-#Experience, #Formation
+#Experience, #Formation, #Passions
 {
     padding-top: 1em
 }
@@ -223,9 +244,24 @@ td:nth-child(3)
     font-size: large;
 }
 
-footer
+#Passions #listepassions
 {
-    margin-top: 1em;
-    padding-top: 1em;
-    background-image: linear-gradient(white, darksalmon)
+    display:flex;  
+    flex-wrap: wrap;
+}
+
+#Passions h2
+{
+    color: darksalmon;
+    padding : 0.1em;
+    font-size: large;
+}
+
+#Passions p
+{
+    border: solid;
+    border-color: darksalmon;
+    border-radius: 2em;
+    padding: 0.5em;
+    margin: 0.5em
 }
