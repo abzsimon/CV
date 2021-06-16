@@ -166,6 +166,7 @@ p
     color: darksalmon;
     padding : 0.1em;
     font-size: large;
+    margin-bottom: 0
 }
 
 table 
@@ -259,7 +260,7 @@ td:nth-child(3)
 
 #Passions p
 {
-    border: solid;
+    border: solid 0.1em;
     border-color: darksalmon;
     border-radius: 2em;
     padding: 0.5em;
