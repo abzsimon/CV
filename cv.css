@@ -5,6 +5,11 @@ body
     margin-top: 3%
 }
 
+section
+{
+    padding-top: 1em
+}
+
 p
 {
     margin-top: 0.2em;
@@ -13,10 +18,20 @@ p
     margin-right: 0;
 }
 
+table
+{
+    width: 100%
+}
+
+tr:hover 
+{
+    background-color: #f5f5f5;
+}
+
 #overview
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #ID 
@@ -84,7 +99,6 @@ p
     display: flex;
     flex-direction: column;
     max-width: 20%; 
-    padding-right: 15em 
 }
 
 #labels .info-icons
@@ -110,7 +124,7 @@ p
 #about
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 1em
 }
 
@@ -137,12 +151,11 @@ p
     align-items: center;
 }
 
-#Skills p, td, th
+#Skills p
 {
     margin-top: 0em;
     margin-bottom: 0em;
-    max-height: 1em;
-    padding-right:2em;
+    padding-right: 2em;
 }
 
 progress
@@ -155,7 +168,8 @@ progress
     border-width: 0.1em
 }
 
-progress::-moz-progress-bar {
+progress::-moz-progress-bar 
+{
     background-color:darksalmon !important;
     border-radius: 0.6em
 }
@@ -165,43 +179,6 @@ progress::-moz-progress-bar {
     color: darksalmon;
     text-align: center;
     padding-top: 1.5em
-}
-
-section
-{
-    padding-top: 1em
-}
-
-.detail h3
-{
-    margin: 0;
-    padding: 0;
-    font-size: medium;
-}
-
-.detail th:nth-child(2)
-{
-    width: 70em
-}
-
-.detail th:nth-child(1)
-{
-    width: 5em
-}
-
-.detail td:nth-child(1) p
-{
-    text-align: center;
-    border : solid darksalmon;
-    border-radius : 2em;
-    border-width: 0.02em;
-    padding: 0.75em
-}
-
-.detail a
-{
-    margin-left: 1em;
-    color:darksalmon
 }
 
 #Experience h2
@@ -217,6 +194,43 @@ section
     color: darksalmon;
     padding : 0.1em;
     font-size: large;
+}
+
+.Experienceformation h3
+{
+    margin: 0;
+    font-size: 1em;
+}
+
+.Experienceformation th:nth-child(1)
+{
+    width: 5%
+}
+
+.Experienceformation td:nth-child(3) i
+{
+    color:darksalmon;
+}
+
+.Experienceformation td:nth-child(3)
+{
+    text-align: center;    
+}
+
+.Experienceformation td:nth-child(1) p
+{
+    padding: O; 
+}
+
+.Experienceformation th:nth-child(2)
+{
+    width: 75%
+}
+
+.Experienceformation th:nth-child(3)
+{
+    width: 15%;
+    align-items: center
 }
 
 #Passions #listepassions
@@ -241,65 +255,247 @@ section
     margin: 0.5em
 }
 
-@media all and (max-device-width: 480px){
+
+@media all and (max-device-width: 480px)
+{
+
+p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+table
+{
+    width: 100%
+}
 
 #overview
 {
     display: flex;
+    flex-wrap:wrap-reverse;
     justify-content: space-between;
-    flex-wrap: wrap;
-    white-space: nowrap
 }
 
-#overview div:nth-child(1)
+#ID 
 {
-    order: 3;
+    display: block;
 }
 
-#overview div:nth-child(2)
+#ID h1
 {
-    order: 1;
+    color:darksalmon;  
+    margin: 0em
+}
+
+#ID h2
+{
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0.5;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: medium;
+}
+
+#lang
+{
+    text-align: center
+}
+
+.achievement
+{
+    display: flex;   
     align-items: center;
 }
 
-#overview div:nth-child(3)
+.achievement i
 {
-    order: 2;
-    padding-right: 0em
+    padding-right: 0.4em;
+}
+
+#portrait
+{
+    display: block;
+    text-align: center;
 }
 
 #portrait img
 {
     width: 6em;
-    margin: 0 0 0 0.5em
+    border-radius: 20em;
+    padding: 0.3em;
+    border : solid darksalmon 0.01em;
+    margin-bottom: 0em
 }
 
-#lang
+#portrait
 {
-    margin: 0 0 0 0.5em
-}
-
-#ID
-{
-    margin: 1em 0em 0.5em 3em
+    margin-bottom: 1em;
 }
 
 #labels
 {
     display: flex;
-    align-content: space-around;
+    max-width: none; 
     justify-content: center;
-    margin-right: 3em
+}
+
+#labels .info-icons
+{
+    display: flex;
+    align-items: center;
+}
+
+#labels .info-icons i,p,a
+{
+    padding-right: 1em;
+}
+
+#labels .info-icons a
+{
+    display: block;
+    text-decoration:unset;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    color: darksalmon;
 }
 
 #about
 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1em
+}
+
+#about h1
+{
+    color: darksalmon;
+    padding : 0.1em;
+    max-width: 50%
 }
 
 #me
 {
-    max-width: 40em
+    max-width: 100%;
+}
+
+#me p
+{    
+    text-align: justify;
+}
+
+#Skills
+{
+    display: flex;
+    align-items: center;
+}
+
+#Skills p
+{
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-right: 2em;
+}
+
+progress
+{
+    max-width: 4em;
+    height: 0.75em;
+    background-color:white;
+    border-radius: 0.6em;
+    border-color: black;
+    border-width: 0.1em
+}
+
+progress::-moz-progress-bar 
+{
+    background-color:darksalmon !important;
+    border-radius: 0.6em
+}
+
+.soustitretableau
+{
+    color: darksalmon;
+    text-align: center;
+    padding-top: 1.5em
+}
+
+#Experience h2
+{
+    color: darksalmon;
+    padding : 0.1em;
+    font-size: large;
+    margin-bottom: 0
+}
+
+#Formation h2
+{
+    color: darksalmon;
+    padding : 0.1em;
+    font-size: large;
+}
+
+.Experienceformation h3
+{
+    margin: 0;
+    font-size: 1em;
+}
+
+.Experienceformation th:nth-child(1)
+{
+    width: 5%
+}
+
+.Experienceformation td:nth-child(3) i
+{
+    color:darksalmon;
+}
+
+.Experienceformation td:nth-child(3)
+{
+    text-align: center;    
+}
+
+.Experienceformation td:nth-child(1) p
+{
+    padding: O; 
+}
+
+.Experienceformation th:nth-child(2)
+{
+    width: 75%
+}
+
+.Experienceformation th:nth-child(3)
+{
+    width: 15%;
+    align-items: center
+}
+
+#Passions #listepassions
+{
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+#Passions h2
+{
+    color: darksalmon;
+    padding : 0.1em;
+    font-size: large;
+}
+
+#Passions p
+{
+    border: solid 0.1em;
+    border-color: darksalmon;
+    border-radius: 2em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    margin: 0.5em
+}
 
 }
