@@ -41,6 +41,11 @@ p
     font-size: medium;
 }
 
+#lang
+{
+    text-align: center
+}
+
 .achievement
 {
     display: flex;   
@@ -60,10 +65,11 @@ p
 
 #portrait img
 {
-    width: 7em;
+    width: 12em;
     border-radius: 20em;
-    padding: 0.2em;
-    border : solid darksalmon 0.01em
+    padding: 0.3em;
+    border : solid darksalmon 0.01em;
+    margin-bottom: 1.5em
 }
 
 #portrait a
@@ -117,7 +123,7 @@ p
 
 #me
 {
-    max-width: 50%;
+    max-width: 60%;
 }
 
 #me p
@@ -125,40 +131,77 @@ p
     text-align: justify;
 }
 
-#progression-bars
+#Sills
 {
     display: flex;
-    margin-right : 5em;
-    margin-top: 2em
+    align-items: center;
 }
 
-#notes
+#Skills p, td, th
 {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: center;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    max-height: 1em;
+    padding-right:2em;
 }
 
-#notes .stars
+progress
 {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em; 
-    color: darksalmon  
+    max-width: 4em;
+    height: 0.75em;
+    background-color:white;
+    border-radius: 0.6em;
+    border-color: black;
+    border-width: 0.1em
 }
 
-#skill 
+progress::-moz-progress-bar {
+    background-color:darksalmon !important;
+    border-radius: 0.6em
+}
+
+.soustitretableau
 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;  
-    padding-left: 1em;      
+    color: darksalmon;
+    text-align: center;
+    padding-top: 1.5em
 }
 
-#Experience, #Formation, #Passions
+section
 {
     padding-top: 1em
+}
+
+.detail h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+}
+
+.detail th:nth-child(2)
+{
+    width: 70em
+}
+
+.detail th:nth-child(1)
+{
+    width: 5em
+}
+
+.detail td:nth-child(1) p
+{
+    text-align: center;
+    border : solid darksalmon;
+    border-radius : 2em;
+    border-width: 0.02em;
+    padding: 0.75em
+}
+
+.detail a
+{
+    margin-left: 1em;
+    color:darksalmon
 }
 
 #Experience h2
@@ -167,75 +210,6 @@ p
     padding : 0.1em;
     font-size: large;
     margin-bottom: 0
-}
-
-table 
-{
-    table-layout: fixed;
-    width: 90%;
-}
-
-thead th
-{
-    text-align: center;
-}
-
-thead th:nth-child(1) 
-{
-    width: 5%;
-}
-  
-thead th:nth-child(2) 
-{
-    width: 80%;
-}
-  
-thead th:nth-child(3) 
-  {
-    width: 15%;
-  }
-
-table a
-{
-    color:darksalmon;
-}
-
-table h3
-{
-    display: block;
-    font-size: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-td p:first-child
-{
-    text-align: center;
-    font-size: 1em;
-    border-style: solid;
-    border-width: 0.1em;
-    border-radius: 1em;
-    padding: 0.5em;
-    border-color: darksalmon; 
-}
-
-td p:nth-child(2)
-
-{
-    font-style:italic;
-    margin-left:0.2em;
-}
-
-td:nth-child(2)
-{
-    padding-left: 2em;
-    padding-right: 20em;
-}
-
-td:nth-child(3)
-{
-    text-align: center;
 }
 
 #Formation h2
@@ -247,7 +221,7 @@ td:nth-child(3)
 
 #Passions #listepassions
 {
-    display:flex;  
+    display: flex;  
     flex-wrap: wrap;
 }
 
@@ -263,6 +237,13 @@ td:nth-child(3)
     border: solid 0.1em;
     border-color: darksalmon;
     border-radius: 2em;
-    padding: 0.5em;
+    padding: 0.2em 0.5em 0.2em 0.5em;
     margin: 0.5em
+}
+
+@media all and (max-width: 576px)
+
+h3
+{
+    font-size: 50em
 }
