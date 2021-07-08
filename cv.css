@@ -31,7 +31,7 @@ tr:hover
 #overview
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #ID 
@@ -178,7 +178,7 @@ progress::-moz-progress-bar
 {
     color: darksalmon;
     text-align: center;
-    padding-top: 1.5em
+    padding-top: 0.5em
 }
 
 #Experience h2
