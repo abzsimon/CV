@@ -38,6 +38,7 @@ tr:hover
 {
     display: flex;
     flex-direction: column;
+    max-width: 20em
 }
 
 #ID h1
@@ -124,7 +125,7 @@ tr:hover
 #about
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 1em
 }
 
